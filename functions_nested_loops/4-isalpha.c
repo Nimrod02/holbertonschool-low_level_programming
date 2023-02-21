@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - isalpha print int c
+ *  _isalpha - isalpha print int c
  * @c: the character being checked
  *
  * Return: 1 if lowercase and 0 if else
