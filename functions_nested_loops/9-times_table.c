@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * void times_table(void)
+ * times_table - print multiplication table up to 9.
  *
  * Return: void
  */
