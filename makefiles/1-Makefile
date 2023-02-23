@@ -2,4 +2,4 @@ CC = gcc
 SRC = schoo
 
 all : 
-	 main.c -o school.c
+	m.h  main.c -o school.c
