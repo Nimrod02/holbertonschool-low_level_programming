@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - print
@@ -13,17 +14,12 @@ void print_diagonal(int n)
 	{
 		for (l = 1; l <= n; l++)
 		{
-			for (c = 1; c <= n; n++)
+			for (c = 1; c < l; c++)
 			{
 				_putchar (' ');
 			}
 			_putchar ('\\');
 			_putchar ('\n');
 		}
-	
-	}
-	else
-	{
-		_putchar ('\n');
 	}
 }
