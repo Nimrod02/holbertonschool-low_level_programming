@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
+ * print_diagonal - print
+ * @n: size
  */
 
 void print_diagonal(int n)
