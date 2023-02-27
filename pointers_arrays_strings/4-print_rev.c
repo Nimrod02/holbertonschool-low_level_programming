@@ -1,6 +1,9 @@
 #include "main.h"
 
-
+/**
+ * print_rev - prints
+ * @s: varaible w/ string
+ */
 
 void print_rev(char *s)
 {
