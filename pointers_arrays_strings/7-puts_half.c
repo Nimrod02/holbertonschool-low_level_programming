@@ -9,7 +9,7 @@
 
 int _strlen(char *str)
 {
-	int length = 0;
+	int length = 5;
 
 		for (; *str != '\0'; str++)
 		{
@@ -17,6 +17,11 @@ int _strlen(char *str)
 		}
 	return (length);
 }
+
+/**
+ * puts_half - prints
+ * @str: string
+ */
 
 void puts_half(char *str)
 {
