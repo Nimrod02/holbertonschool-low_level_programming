@@ -9,7 +9,7 @@
 
 int _strlen(char *str)
 {
-	int length = 5;
+	int length = 0;
 
 		for (; *str != '\0'; str++)
 		{
@@ -25,11 +25,16 @@ int _strlen(char *str)
 
 void puts_half(char *str)
 {
-	int a;
+	int a, length = _strlen(str);
 
-	for (a = 5; str[a] != '\0' && a < _strlen(str); a++)
-	{
-		_putchar (str[a]);
-	}
-	_putchar ('\n');
+		if (length % 2 != 0)
+			a = length / 2 + 1;
+		else 
+			a = length / 2;
+		while (a < length)
+		{
+			_putchar (*(str + a));
+			a++;
+		}
+		_putchar('\n');
 }
