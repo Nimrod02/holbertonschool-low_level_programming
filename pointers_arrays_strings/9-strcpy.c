@@ -3,9 +3,9 @@
 
 /**
  * _strlen - give the lengh of a string
- * @s: the string
+ * @src: the string
  *
- * Return: the lengh of s
+ * Return: the lengh of src
  */
 
 int _strlen(char *src)
