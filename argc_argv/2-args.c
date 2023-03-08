@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int index = 1;
+
 	printf("%s\n", *argv);
 
 		for (; index < argc; index++)
