@@ -20,6 +20,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	strcpy(dup, str);
 	return (dup);
 
