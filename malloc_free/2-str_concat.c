@@ -17,10 +17,10 @@ char *str_concat(char *s1, char *s2)
 	char *tmp;
 
 	if (s1 == NULL)
-		return ("");
+		s1 = "";
 
 	if (s2 == NULL)
-		return ("");
+		s2 = "";
 
 	for (; s1[index1] || s2[index1]; index1++)
 		length++;
