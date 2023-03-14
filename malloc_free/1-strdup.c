@@ -21,6 +21,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (*_strdup != 0)
+	{
+		return (NULL);
+	}
+
 	strcpy(dup, str);
 	return (dup);
 }
