@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-* main - print the current file
+/**
+* main - print the name of the current file, and return to a new line
 *
 * Return: 0 is a success
 */
