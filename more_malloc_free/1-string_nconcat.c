@@ -25,17 +25,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (num < 0)
 		return (NULL);
 
-	length = strlen(s1);
+	length = strlen(s1) + num + 1;
 
-	ptr = malloc(sizeof(ptr) * length);
+	ptr = malloc(sizeof(*ptr) * length);
 
 	if (ptr == NULL)
 		return (NULL);
 
 	for (; s1[index] < '\0'; index++)
 		ptr[index] = s1[index];
+
 	for (; index2 < num; index2++)
-		ptr[index + index2] = *s2;
+		ptr[index + index2] = s2[index2];
+
 	ptr[index + index2] = '\0';
 
 return (ptr);
