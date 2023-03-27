@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include <type.h>
 
 /**
  * print_char - main function that print a character
@@ -10,7 +9,7 @@
 */
 void print_char(va_list form)
 {
-	printf("%c", va_arg(form, char));
+	printf("%c", va_arg(form, int));
 }
 
 /**
@@ -68,27 +67,27 @@ void print_all(const char * const format, ...)
 
 	va_list dt;
 
-	datatype choice[] = { {'c', print_char},
+	typefinder choice[] = { {'c', print_char},
 			      {'i', print_int},
 			      {'f', print_float},
 			      {'s', print_string},
 			      {'\0', NULL} };
 
 	va_start(dt, format);
-	while (format != NULL && format[j] != '\0')
+	while (format != NULL && format[index2] != '\0')
 	{
 		while (choice[index1].letter != '\0')
 		{
-			if (choice[index1].letter == format[j])
+			if (choice[index1].letter == format[index2])
 			{
-				printf("%s", separator);
-				choice[index1].func(valist);
-				separator = ", ";
+				printf("%s", space);
+				choice[index1].func(dt);
+				space = ", ";
 			}
 			index1++;
 		}
 		index2++;
 	}
-	va_end(valist);
+	va_end(dt);
 	printf("\n");
 }
