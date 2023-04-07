@@ -16,5 +16,5 @@ void free_dlistint(dlistint_t *head)
 		free(current);
 		current = next;
 	}
-	
+
 }
