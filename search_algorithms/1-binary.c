@@ -16,10 +16,12 @@ int binary_search(int *array, size_t size, int value)
 	while (index < size)
 	{
 		for (index = 0; index < size; index++)
+		{
 			printf("%d%s", array[index], index + 1 == size ? "\n" : ", ");
 			if(array[index] == value)
 				return (index);
 			index++;
+		}
 	}
 	return (-1);
 
