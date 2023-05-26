@@ -2,6 +2,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/**
+ * main - multiply 3 and 5 to 1024
+ *
+ *
+ * Return: always success
+*/
 int main(void)
 {
 	int index, sum = 0;
