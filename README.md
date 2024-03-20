@@ -31,13 +31,17 @@ Below is a brief overview of some of the key projects included in this repositor
 
 To clone this repository and explore these projects, run the following command in your terminal:
 
-```git clone https://github.com/Nimrod02/holbertonschool-low_level_programming.git```
+```
+$ git clone https://github.com/Nimrod02/holbertonschool-low_level_programming.git
+```
 
 ## Usage
 
 Each project directory contains files relevant to a specific assignment or task. To compile the C files, you might generally use:
 
-```gcc -Wall -Werror -Wextra -pedantic *.c -o <output-file-name>```
+```
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o <output-file-name>
+```
 
 Please refer to the README.md file within each project directory for specific instructions on compiling and running each program.
 
